@@ -20,7 +20,7 @@ print("fetching posts...")
 test = list(push.search_submissions(before=before_period,
                                     subreddit='AmITheAsshole',
                                     filter=['url','author', 'title', 'subreddit'],
-                                    limit=500000,
+                                    limit=150000,
                                     stickied=False))
 
 print("posts fetched...")
