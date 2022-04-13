@@ -22,6 +22,7 @@ The following repository requires the following libraries to run properly:
 - psaw
 - dotenv
 - re
+- seaborn
 
 -----
 ### Files
@@ -42,8 +43,11 @@ The following repository requires the following libraries to run properly:
 
 3. You can test the model running the tester script, running the following command: `python model/tester.py`. It will ask for text input, which you must enter to get a predictor of the AITA verdict.
 
-4. For analytic results, you can open the Jupyter Notebook in the `analytics` folder, and you can also find the most relevant findings in this Medium blog post (link).
+4. For analytic results, you can open the Jupyter Notebook in the `analytics` folder. The files necessary to build the word cloud images will be generated when running this notebook.
+
+6. To build the word cloud images, run the following command: `analytics/wordcloud_builder.py`.
 
 -----
 
 ### Main Results
+For a longer version of the results, you can check this blog post (link).
