@@ -26,8 +26,8 @@ The following repository requires the following libraries to run properly:
 
 -----
 ### Files
-- analytics folder:
-  - `AITA-Analytics.ipynb`: Jupyter Notebook where most of the processing and analysis was registered.
+- `AITA Predict.ipynb`: Jupyter Notebook with an overview of the project, analytics, and a model tester.
+- wordclouds folder:
   - `wordcloud_builder.py`: script to create word clouds.
 - model folder:
   - `model.py`: script to build and train the ML pipeline.
@@ -41,11 +41,9 @@ The following repository requires the following libraries to run properly:
 
 2. After fetching, run the following command: `python model/model.py` to run the Machine Learning pipeline, and it'll print the classification report of the model.
 
-3. You can test the model running the tester script, running the following command: `python model/tester.py`. It will ask for text input, which you must enter to get a predictor of the AITA verdict.
+3. For a project overview, analytics and model testing, you can open the Jupyter Notebook in the main folder. The files necessary to build the word cloud images will be generated when running this notebook.
 
-4. For analytic results, you can open the Jupyter Notebook in the `analytics` folder. The files necessary to build the word cloud images will be generated when running this notebook.
-
-6. To build the word cloud images, run the following command: `analytics/wordcloud_builder.py`.
+4. To create the word clouds, run the following command: `python wordclouds/wordcloud_builder.py`
 
 -----
 

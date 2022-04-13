@@ -1,5 +1,6 @@
 *.env
 *.DS_Store
-Untitled-checkpoint.ipynb
+*-checkpoint.ipynb
 Untitled.ipynb
 AITA-Predictor-checkpoint.ipynb
+*.csv
