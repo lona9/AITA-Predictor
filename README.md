@@ -50,4 +50,4 @@ The following repository requires the following libraries to run properly:
 -----
 
 ### Main Results
-For a longer version of the results, you can check this blog post (link).
+The ETL pipeline was built successfully and managed to retrieve a large volume of data that required minimal processing and cleaning steps. The cleaned data was used for the model building, which had a final F-score of 0.6 after iterations for the best classifiers and parameters. For analytical results, you can check this <a href="https://medium.com/@pilar.vasquez.h/i-want-reddit-to-judge-me-ddd70b0908ec">blog post</a> for a longer version of the findings explored in the Jupyter Notebook.
