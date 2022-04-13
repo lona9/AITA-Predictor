@@ -23,6 +23,7 @@ The following repository requires the following libraries to run properly:
 - dotenv
 - re
 - seaborn
+- joblib
 
 -----
 ### Files
@@ -33,6 +34,7 @@ The following repository requires the following libraries to run properly:
   - `model.py`: script to build and train the ML pipeline.
 - reddit_scraper folder:
   - `scraper.py`: script to run the reddit scraper to fetch post information.
+  - `reddit_posts.csv`: output file from the previous script with Reddit post data.
 
 -----
 ### Instructions

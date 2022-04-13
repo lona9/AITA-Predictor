@@ -85,8 +85,8 @@ def build_model():
     ])
 
     parameters = {
-            "clf__criterion": ["gini"],
-            #"clf__min_samples_split": [2, 10, 20]
+            "clf__criterion": ["gini", "entropy"],
+            "clf__min_samples_split": [10, 20]
         }
 
     model = GridSearchCV(pipeline, parameters, verbose = 10)

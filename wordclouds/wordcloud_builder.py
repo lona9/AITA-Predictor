@@ -19,7 +19,7 @@ def create_wordcloud(file_name):
 
     #define stop words and extra noise worse
     stop_words = get_stop_words('english')
-    additional_words = ["just", "said", "told", "like", "t", "s", "get", "time", "year", "got", "one", "know"]
+    additional_words = ["just", "said", "told", "like", "t", "s", "get", "time", "year", "got", "one", "know", "want"]
     stop_words.extend(additional_words)
 
     #read original text file and split words
@@ -30,20 +30,24 @@ def create_wordcloud(file_name):
     #filter text based on stop words
     if file_name.startswith('nta'):
         image_name = "nta.png"
-        with open('filteredtext_nta.txt', "a") as filtered_file:
+        filtered_text = []
+        with open('filteredtext_nta.txt', "w") as filtered_file:
             for r in words:
                 if not r in stop_words:
-                    filtered_file.write(" " + r)
+                    filtered_text.append(r)
+            filtered_file.write(" ".join(filtered_text))
 
         with open('filteredtext_nta.txt', 'r') as txt_file:
             filteredtext = txt_file.read()
 
     else:
         image_name = "yta.png"
-        with open('filteredtext_yta.txt', "a") as filtered_file:
+        filtered_text = []
+        with open('filteredtext_yta.txt', "w") as filtered_file:
             for r in words:
                 if not r in stop_words:
-                    filtered_file.write(" " + r)
+                    filtered_text.append(r)
+            filtered_file.write(" ".join(filtered_text))
 
         with open('filteredtext_yta.txt', 'r') as txt_file:
             filteredtext = txt_file.read()
